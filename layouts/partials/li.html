@@ -14,7 +14,7 @@
 
         {{ if or .Params.author .Site.Params.author}}
             {{$authorname := or .Params.author .Site.Params.author }}
-            {{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
+            {{$authoravatar := or .Params.authoravatar .Site.Params.authoravatar }}
 
             {{with $authoravatar}}
             <img class="author-thumb" src="{{ $authoravatar| relURL  }}" alt="Author image" nopin="nopin" />
